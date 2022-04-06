@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 06. Apr 2022 um 11:38
+-- Erstellungszeit: 06. Apr 2022 um 14:48
 -- Server-Version: 10.4.21-MariaDB
 -- PHP-Version: 8.0.12
 
@@ -31,6 +31,30 @@ CREATE TABLE `beilagen` (
   `Name` varchar(80) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Daten für Tabelle `beilagen`
+--
+
+INSERT INTO `beilagen` (`Name`) VALUES
+('Apfelmus'),
+('Blaukraut'),
+('Bratensoße'),
+('Brot'),
+('Brühe'),
+('Bunter Salat'),
+('Buttergemüse'),
+('Grüner Salat'),
+('Kaisergemüse'),
+('Kartoffeln'),
+('Kartoffelsalat'),
+('Ketchup'),
+('Kroketten'),
+('Pommes'),
+('Reis'),
+('Semmelknödel'),
+('Tomatensoße'),
+('Vanillesoße');
+
 -- --------------------------------------------------------
 
 --
@@ -54,6 +78,25 @@ CREATE TABLE `gericht` (
   `Beschreibung` varchar(380) DEFAULT NULL,
   `Link` varchar(300) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Daten für Tabelle `gericht`
+--
+
+INSERT INTO `gericht` (`Name`, `Beschreibung`, `Link`) VALUES
+('Bauerntopf', 'Ganz viel Hackfleisch, Paprika und Kartoffeln – genial!', 'https://www.daskochrezept.de/rezepte/bauerntopf-mit-hackfleisch-nach-omas-rezept'),
+('Cheeseburger', 'Burger mit Fleisch und Käse', 'https://www.daskochrezept.de/rezepte/cheeseburger'),
+('Chicken-Nuggets', 'Knusprige Hähnchenstückchen mit Cornflakes-Panade', 'https://www.daskochrezept.de/rezepte/chicken-nuggets-selber-machen'),
+('Dampfnudeln', 'gebratene und gedämpfte Hefeklöße.', 'https://www.daskochrezept.de/rezepte/dampfnudeln'),
+('Gnocchis', 'Eiförmige, spätzleähnliche Teiglinge', 'https://www.daskochrezept.de/rezepte/grundrezept-gnocchi'),
+('Gulasch', 'zartes Schweinegulasch mit herrlich viel Soße.', 'https://www.daskochrezept.de/rezepte/schweinegulasch'),
+('Gyros', 'Gericht aus am Drehspieß gebratenem, gewürztem Fleisch', 'https://www.daskochrezept.de/rezepte/gyros'),
+('Hot Dog', 'Würstchen im Brötchen', 'https://www.daskochrezept.de/rezepte/hot-dogs'),
+('Kaiserschmarrn', 'Österreichische Süßspeise. Dicker gehackter Pfannkuchen.', 'https://www.daskochrezept.de/rezepte/tiroler-kaiserschmarrn-das-einfache-original-rezept'),
+('Lachs', 'Gebratenes Seelachsfilet', 'https://www.daskochrezept.de/rezepte/gebratenes-seelachsfilet'),
+('Maultaschen', 'Gefüllte Taschen aus Nudelteig', 'https://www.daskochrezept.de/rezepte/maultaschen-0'),
+('Schnitzel', 'Schnitzel Wiener Art (Schwein)', 'https://www.daskochrezept.de/rezepte/paniertes-schnitzel-wiener-art'),
+('Schweinebraten', 'Zarter, saftiger Schweinebraten.', 'https://www.daskochrezept.de/rezepte/schweinebraten-0');
 
 -- --------------------------------------------------------
 
@@ -100,6 +143,66 @@ CREATE TABLE `zutaten` (
   `id` int(11) NOT NULL,
   `Name` varchar(80) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Daten für Tabelle `zutaten`
+--
+
+INSERT INTO `zutaten` (`id`, `Name`) VALUES
+(1, 'Zucker'),
+(2, 'Salz'),
+(3, 'Mehl'),
+(4, 'Milch'),
+(5, 'Sahne'),
+(6, 'Dosentomaten'),
+(7, 'Brühpulver'),
+(8, 'Reis'),
+(9, 'Apfelmus'),
+(10, 'Vanillesoße (Tütenpulver)'),
+(11, 'TK Kaisergemüse'),
+(12, 'TK Buttergemüse'),
+(13, 'TK Kroketten'),
+(14, 'Senf'),
+(15, 'Pfeffer'),
+(16, 'Paprika'),
+(17, 'Paprika edelsüß'),
+(18, 'Eisbergsalat'),
+(19, 'Karotte'),
+(20, 'Schnittlauch'),
+(21, 'Petersilie'),
+(22, 'Hackfleisch'),
+(23, 'Schweinefleisch von der Nuss'),
+(24, 'Rosinen'),
+(25, 'Puderzucker'),
+(26, 'Sauerkraut'),
+(27, 'Röstzwiebeln'),
+(28, 'Tomatenmark'),
+(29, 'Butterschmalz'),
+(30, 'Majoran'),
+(31, 'Spinat'),
+(32, 'Speck'),
+(33, 'Nudelteig'),
+(34, 'Zwiebeln'),
+(35, 'Tomate'),
+(36, 'Schmelzkäse'),
+(37, 'Burgerbrötchen'),
+(38, 'Speiseöl'),
+(39, 'Cornflakes'),
+(40, 'gehobelte Mandeln'),
+(41, 'Vanillezucker'),
+(42, 'Gurke'),
+(43, 'Remoulade'),
+(44, 'Würstchen (rot)'),
+(45, 'Hot-Dog-Brötchen'),
+(46, 'Knollensellerie'),
+(47, 'Knoblauchzehe'),
+(48, 'Lorbeerblatt'),
+(49, 'Butter'),
+(50, 'Wasser'),
+(51, 'Kräuter der Provence'),
+(52, 'Kümmel'),
+(53, 'Cayennepfeffer'),
+(54, 'Ei');
 
 --
 -- Indizes der exportierten Tabellen
