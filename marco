@@ -1,0 +1,183 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Erstellungszeit: 07. Apr 2022 um 09:58
+-- Server-Version: 10.4.18-MariaDB
+-- PHP-Version: 7.3.27
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Datenbank: `projekt_wochenplan_it11f`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `gericht_zutaten`
+--
+
+CREATE TABLE `gericht_zutaten` (
+  `Gericht_Name` varchar(80) DEFAULT NULL,
+  `Zutaten_id` int(11) DEFAULT NULL,
+  `Menge` float DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Daten für Tabelle `gericht_zutaten`
+--
+
+INSERT INTO `gericht_zutaten` (`Gericht_Name`, `Zutaten_id`, `Menge`) VALUES
+('Bauerntopf', 34, 0),
+('Bauerntopf', 19, 0),
+('Bauerntopf', 46, 16),
+('Bauerntopf', 47, 1),
+('Bauerntopf', 16, 0),
+('Bauerntopf', 55, 0),
+('Bauerntopf', 56, 1),
+('Bauerntopf', 22, 133),
+('Bauerntopf', 2, 0),
+('Bauerntopf', 15, 0),
+('Bauerntopf', 28, 16),
+('Bauerntopf', 50, 33),
+('Bauerntopf', 6, 133),
+('Bauerntopf', 57, 100),
+('Bauerntopf', 48, 0),
+('Bauerntopf', 51, 0),
+('Cheeseburger', 34, 0),
+('Cheeseburger', 22, 375),
+('Cheeseburger', 59, 0),
+('Cheeseburger', 54, 0),
+('Cheeseburger', 14, 0),
+('Cheeseburger', 2, 0),
+('Cheeseburger', 15, 0),
+('Cheeseburger', 16, 0),
+('Cheeseburger', 38, 0),
+('Cheeseburger', 36, 1),
+('Cheeseburger', 58, 0),
+('Cheeseburger', 21, 0),
+('Cheeseburger', 37, 1),
+('Chicken-Nuggets', 39, 25),
+('Chicken-Nuggets', 54, 0),
+('Chicken-Nuggets', 2, 0),
+('Chicken-Nuggets', 17, 0),
+('Chicken-Nuggets', 60, 125),
+('Chicken-Nuggets', 15, 0),
+('Chicken-Nuggets', 3, 0),
+('Chicken-Nuggets', 56, 50),
+('Dampfnudeln', 3, 41),
+('Dampfnudeln', 61, 0),
+('Dampfnudeln', 1, 10),
+('Dampfnudeln', 4, 41),
+('Dampfnudeln', 49, 8),
+('Dampfnudeln', 54, 0),
+('Dampfnudeln', 2, 0),
+('Gnocchis', 55, 250),
+('Gnocchis', 3, 62),
+('Gnocchis', 62, 0),
+('Gnocchis', 2, 0),
+('Gulasch', 63, 200),
+('Gulasch', 55, 100),
+('Gulasch', 34, 0),
+('Gulasch', 47, 0),
+('Gulasch', 64, 0),
+('Gulasch', 28, 0),
+('Gulasch', 17, 0),
+('Gulasch', 30, 0),
+('Gulasch', 6, 125),
+('Gulasch', 2, 0),
+('Gulasch', 52, 0),
+('Gulasch', 53, 0),
+('Gulasch', 16, 0),
+('Gyros', 65, 300),
+('Gyros', 66, 3),
+('Gyros', 67, 4),
+('Hot Dog', 44, 1),
+('Hot Dog', 42, 5),
+('Hot Dog', 34, 0),
+('Hot Dog', 45, 1),
+('Hot Dog', 27, 1),
+('Hot Dog', 58, 1),
+('Hot Dog', 43, 1),
+('Hot Dog', 14, 1),
+('Kaiserschmarrn', 24, 1),
+('Kaiserschmarrn', 68, 3),
+('Kaiserschmarrn', 54, 1),
+('Kaiserschmarrn', 4, 125),
+('Kaiserschmarrn', 2, 0),
+('Kaiserschmarrn', 1, 27),
+('Kaiserschmarrn', 69, 75),
+('Kaiserschmarrn', 41, 5),
+('Kaiserschmarrn', 49, 20),
+('Kaiserschmarrn', 40, 1.5),
+('Kaiserschmarrn', 25, 0),
+('Lachs', 70, 1.5),
+('Lachs', 49, 17.5),
+('Lachs', 15, 0),
+('Lachs', 2, 0),
+('Lachs', 3, 0),
+('Maultaschen', 33, 166.67),
+('Maultaschen', 79, 0.33),
+('Maultaschen', 71, 1),
+('Maultaschen', 20, 0),
+('Maultaschen', 34, 1),
+('Maultaschen', 32, 33.33),
+('Maultaschen', 72, 33.33),
+('Maultaschen', 31, 83.33),
+('Maultaschen', 54, 1),
+('Maultaschen', 22, 200),
+('Maultaschen', 29, 0),
+('Maultaschen', 30, 0),
+('Maultaschen', 2, 0),
+('Maultaschen', 15, 0),
+('Schnitzel', 73, 1),
+('Schnitzel', 54, 0.5),
+('Schnitzel', 2, 0),
+('Schnitzel', 15, 0),
+('Schnitzel', 3, 0.75),
+('Schnitzel', 74, 2),
+('Schnitzel', 29, 0.5),
+('Schweinebraten', 23, 380),
+('Schweinebraten', 2, 0),
+('Schweinebraten', 15, 0),
+('Schweinebraten', 75, 0),
+('Schweinebraten', 76, 125),
+('Schweinebraten', 77, 0.5),
+('Schweinebraten', 78, 0.5);
+
+--
+-- Indizes der exportierten Tabellen
+--
+
+--
+-- Indizes für die Tabelle `gericht_zutaten`
+--
+ALTER TABLE `gericht_zutaten`
+  ADD KEY `Zutaten_id` (`Zutaten_id`),
+  ADD KEY `Gericht_Name` (`Gericht_Name`);
+
+--
+-- Constraints der exportierten Tabellen
+--
+
+--
+-- Constraints der Tabelle `gericht_zutaten`
+--
+ALTER TABLE `gericht_zutaten`
+  ADD CONSTRAINT `gericht_zutaten_ibfk_1` FOREIGN KEY (`Zutaten_id`) REFERENCES `zutaten` (`id`),
+  ADD CONSTRAINT `gericht_zutaten_ibfk_2` FOREIGN KEY (`Gericht_Name`) REFERENCES `gericht` (`Name`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
