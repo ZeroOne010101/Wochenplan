@@ -1,0 +1,4 @@
+# Auflistung für Hauptmenü
+SELECT * FROM wochenplan 
+JOIN gericht ON gericht.Name = wochenplan.Gericht
+JOIN beilagen ON beilagen.Name = wochenplan.Beilage
